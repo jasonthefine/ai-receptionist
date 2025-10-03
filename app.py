@@ -9,6 +9,8 @@ app = Flask(__name__)
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 BUSINESS_NAME  = os.getenv("BUSINESS_NAME", "Your Business")
 BUSINESS_INFO  = os.getenv("BUSINESS_INFO", """
+VOICE_NAME = os.getenv("VOICE_NAME", "Polly.Joanna")  # other good options: Polly.Matthew, Polly.Ivy, Polly.Kevin
+VOICE_LANG = os.getenv("VOICE_LANG", "en-US")
 Hours: Mon–Fri 9am–5pm.
 Services: General inquiries, pricing estimates, scheduling call-backs.
 If unsure, politely collect name, phone, and reason for calling.
